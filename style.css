@@ -1,0 +1,12 @@
+.topbox {
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 200px;
+}
+
+.toptext {
+    line-height: 30px;
+}
