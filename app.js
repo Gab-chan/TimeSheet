@@ -32,13 +32,22 @@ var totalRows = [];
 
 function createRows(){
     for (var i = 0; i < nameRows.length; i++) {
-        var row = $("<p>");
-        row.text(nameRows[i]);
-        row.attr("data-row", nameRows[i]);
-        row.addClass("column col-md-2");
-        $("#list1").append(row);
+        var row1 = $("<div>");
+        row1.text(nameRows[i]);
+        row1.attr("data-row", nameRows[i]);
+        row1.addClass("column col-md-2");
+        $("#row1").append(row1);
 
         
+    }
+
+    for (var i = 0; i < roleRows.length; i++) {
+        var row2 = $("<div>");
+        row2.text(roleRows[i]);
+        row2.attr("data-row", roleRows[i]);
+        row2.addClass("column col-md-2");
+        $("#row1").append(row2);
+
         
     }
     
