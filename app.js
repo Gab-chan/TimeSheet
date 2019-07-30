@@ -22,15 +22,21 @@ $(document).ready(function () {
 }) 
 
 
-var rows = [];
+var nameRows = [];
+var roleRows = [];
+var startRows = [];
+var monthsRows = [];
+var monthsRows = [];
+var monthlyRows = [];
+var totalRows = [];
 
 function createRows(){
-    for (var i = 0; i < rows.length; i++) {
+    for (var i = 0; i < nameRows.length; i++) {
         var row = $("<p>");
-        row.text(rows[i]);
-        row.attr("data-row", rows[i]);
+        row.text(NameRows[i]);
+        row.attr("data-row", Namerows[i]);
         row.addClass("row");
-        $(".listgroup").append(row);
+        $(".list-group").append(row);
 
         
         
