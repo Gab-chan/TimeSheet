@@ -21,7 +21,7 @@ $(document).ready(function () {
 
 }) 
 
-
+// var Rows = [];
 var nameRows = [];
 var roleRows = [];
 var startRows = [];
@@ -30,6 +30,16 @@ var monthlyRows = [];
 var totalRows = [];
 
 function createRows(){
+    // for (var i = 0; i < nameRows.length; i++) {
+    //     var row = $("<div>");
+    //     row.text(nameRows[i]);
+    //     row.attr("data-row", nameRows[i]);
+    //     row.addClass("column col-md-2");
+    //     $("#row1").append(row);
+
+        
+    // }
+
     for (var i = 0; i < nameRows.length; i++) {
         var row = $("<div>");
         row.text(nameRows[i]);
