@@ -26,25 +26,64 @@ var nameRows = [];
 var roleRows = [];
 var startRows = [];
 var monthsRows = [];
-var monthsRows = [];
 var monthlyRows = [];
 var totalRows = [];
 
 function createRows(){
     for (var i = 0; i < nameRows.length; i++) {
-        var row1 = $("<div>");
-        row1.text(nameRows[i]);
-        row1.attr("data-row", nameRows[i]);
-        row1.addClass("column col-md-2");
-        $("#row1").append(row1);
+        var row = $("<div>");
+        row.text(nameRows[i]);
+        row.attr("data-row", nameRows[i]);
+        row.addClass("column col-md-2");
+        $("#row1").append(row);
 
         
     }
 
     for (var i = 0; i < roleRows.length; i++) {
+        var row = $("<div>");
+        row.text(roleRows[i]);
+        row.attr("data-row", roleRows[i]);
+        row.addClass("column col-md-2");
+        $("#row1").append(row);
+
+        
+    }
+
+    for (var i = 0; i < startRows.length; i++) {
+        var row = $("<div>");
+        row.text(startRows[i]);
+        row.attr("data-row", startRows[i]);
+        row.addClass("column col-md-2");
+        $("#row1").append(row);
+
+        
+    }
+
+    for (var i = 0; i < monthsRows.length; i++) {
+        var row = $("<div>");
+        row.text(monthsRows[i]);
+        row.attr("data-row", monthsRows[i]);
+        row.addClass("column col-md-2");
+        $("#row1").append(row);
+
+        
+    }
+
+    for (var i = 0; i < monthlyRows.length; i++) {
         var row2 = $("<div>");
-        row2.text(roleRows[i]);
-        row2.attr("data-row", roleRows[i]);
+        row2.text(monthlyRows[i]);
+        row2.attr("data-row", monthlyRows[i]);
+        row2.addClass("column col-md-2");
+        $("#row1").append(row2);
+
+        
+    }
+
+    for (var i = 0; i < totalRows.length; i++) {
+        var row2 = $("<div>");
+        row2.text(totalRows[i]);
+        row2.attr("data-row", totalRows[i]);
         row2.addClass("column col-md-2");
         $("#row1").append(row2);
 
