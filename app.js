@@ -33,10 +33,10 @@ var totalRows = [];
 function createRows(){
     for (var i = 0; i < nameRows.length; i++) {
         var row = $("<p>");
-        row.text(NameRows[i]);
-        row.attr("data-row", Namerows[i]);
-        row.addClass("row");
-        $(".list-group").append(row);
+        row.text(nameRows[i]);
+        row.attr("data-row", nameRows[i]);
+        row.addClass("column col-md-2");
+        $("#list1").append(row);
 
         
         
