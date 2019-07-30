@@ -20,3 +20,22 @@ $(document).ready(function () {
 
 
 }) 
+
+
+var rows = [];
+
+function createRows(){
+    for (var i = 0; i < rows.length; i++) {
+        var row = $("<p>");
+        row.text(rows[i]);
+        row.attr("data-row", rows[i]);
+        row.addClass("row");
+        $(".listgroup").append(row);
+
+        
+        
+    }
+    
+
+}
+createRows();
