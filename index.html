@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>TimeSheet</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>TimeSheet</title>
 </head>
+
 <body>
   <div class="jumbotron jumbotron-fluid topbox">
     <div class="container">
@@ -21,10 +30,18 @@
 
   <div class="card text-center listbox">
     <div class="card-header">
-      Featured
+      Current Employees
     </div>
     <div class="card-body">
-      <h5 class="card-title">Special title treatment</h5>
+        <ul class="list-group list-group-horizontal">
+            <li class="list-group-item">Employe Name</li>
+            <li class="list-group-item">Role</li>
+            <li class="list-group-item">Start Date</li>
+            <li class="list-group-item">Months Worked</li>
+            <li class="list-group-item">Monthly Rate ($)</li>
+            <li class="list-group-item">Total Billed ($)</li>
+          </ul>
+          <br>
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
     </div>
   </div>
@@ -32,66 +49,61 @@
 
 
   <div class="card text-center listbox">
-      <div class="card-header">
-            Featured
-          </div>
-      </div>
-      <div class="row" id="mid8">
-          <div class="col" id="small9">
-
-          </div>
-      </div>
+    <div class="card-header">
+      Add Employee </div>
   </div>
-  
+
   <div class="container inputbox" id="big1">
-      <div class="row" id="mid1">
-          <div class="col" id="small1">
-          </div>
+    <div class="row" id="mid1">
+      <div class="col" id="small1">
       </div>
-      <div class="row" id="mid2">
-          <div class="col" id="small2">
-              <p id="p1">Employee Name</p>
-              <input id="text1" type="text" class="form-control" aria-label="Text input with checkbox">
-          </div>
+    </div>
+    <div class="row" id="mid2">
+      <div class="col" id="small2">
+        <p id="p1">Employee Name</p>
+        <input id="text1" type="text" class="form-control" placeholder="Jane Doe" aria-label="Text input with checkbox">
       </div>
-      <br>
-      <div class="row" id="mid4">
-          <div class="col" id="small4">
-              <p id="p3">Role</p>
-              <input id="text2" type="text" class="form-control" aria-label="Text input with checkbox">
-          </div>
-      </div>
-      <br>
-      <div class="row" id="mid5">
-          <div class="col" id="small5">
-              <p id="p4">Start Date</p>
-              <input id="text3" type="text" class="form-control" aria-label="Text input with checkbox">
-          </div>
-      </div>
-      <br>
-      <div class="row" id="mid5">
-        <div class="col" id="small5">
-            <p id="p4">Monthly Rate</p>
-            <input id="text3" type="text" class="form-control" aria-label="Text input with checkbox">
-        </div>
     </div>
     <br>
-      <div class="row" id="mid6">
-          <div class="col-1" id="small6">
-              <input id="search" class="btn btn-secondary" type="submit" value="Submit">
-          </div>
-          <div class="col-1" id="small7">
-              <input id="reset" class="btn btn-secondary" type="reset" value="Reset">
-          </div>
-          
+    <div class="row" id="mid4">
+      <div class="col" id="small4">
+        <p id="p3">Role</p>
+        <input id="text2" type="text" class="form-control" placeholder="CEO" aria-label="Text input with checkbox">
       </div>
+    </div>
+    <br>
+    <div class="row" id="mid5">
+      <div class="col" id="small5">
+        <p id="p4">Start Date</p>
+        <input id="text3" type="text" class="form-control" placeholder="01/25/1990"
+          aria-label="Text input with checkbox">
+      </div>
+    </div>
+    <br>
+    <div class="row" id="mid5">
+      <div class="col" id="small5">
+        <p id="p4">Monthly Rate</p>
+        <input id="text3" type="text" class="form-control" placeholder="5000" aria-label="Text input with checkbox">
+      </div>
+    </div>
+    <br>
+    <div class="row" id="mid6">
+      <div class="col-1" id="small6">
+        <input id="search" class="btn btn-secondary" type="submit" value="Submit">
+      </div>
+      <div class="col-1" id="small7">
+        <input id="reset" class="btn btn-secondary" type="reset" value="Reset">
+      </div>
+
+    </div>
   </div>
 
 
 
 
-        
-    
+
+
 </body>
 <script type="text/javascript" src="app.js"></script>
+
 </html>
